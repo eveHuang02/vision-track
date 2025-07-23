@@ -4,21 +4,15 @@
 
 This repository provides complete implementation of the **lane segmentation** and **pothole detection** modules.
 
----
-
 ## 🎯 Objectives
 
 - Enable safe and efficient navigation in real-time  
 - Detect lane boundaries and road hazards using deep learning  
 
----
-
 ## 📈 Model Performance
 
 - **Lane Segmentation** (DeepLabV3+): 95.99% mean Intersection over Union (mIoU)  
 - **Pothole Detection** (YOLOv12): 92.8% mean Average Precision (mAP)  
-
----
 
 ## 🗂️ Repository Structure
 
@@ -29,8 +23,6 @@ Vision_Track/
 ├── README.md                      # Top-level documentation
 ├── .gitignore                     # Git ignore rules
 ```
-
----
 
 ## 🚀 Getting Started
 
@@ -48,15 +40,11 @@ git clone https://github.com/your-username/Vision_Track.git
 cd Vision_Track
 ```
 
----
-
 ## 🕳️ Pothole Detection Module
 
 This module uses a lightweight YOLOv12-nano model to detect potholes from video frames in real time.
 
 📄 See [`pothole_detection_yolov12/README.md`](pothole_detection_yolov12/README.md) for full details.
-
----
 
 ## 🛣️ Lane Segmentation Module
 
@@ -64,13 +52,9 @@ Based on DeepLabV3+ with a MobileNetV2 backbone, this module segments lane marki
 
 📄 See [`lane_segmentation_DeepLabV3+/README.md`](lane_segmentation_DeepLabV3+/README.md) for more information. 
 
----
-
 ## 📝 License
 
 This code is for academic and research purposes only. Datasets may be proprietary and are not publicly released.
-
----
 
 ## 🙋 Acknowledgements
 
