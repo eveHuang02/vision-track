@@ -1,0 +1,6 @@
+train: D:\users\tam231\pothole_detection\pothole_dataset\train\images
+val: D:\users\tam231\pothole_detection\pothole_dataset\test\images
+# val: D:\users\tam231\BRALCA\dataset_v8\test\images
+
+nc: 1
+names: ['pothole']
