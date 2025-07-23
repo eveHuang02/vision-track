@@ -2,20 +2,14 @@
 
 This module performs real-time lane segmentation using DeepLabV3+ with a MobileNetV2 backbone. It is based on TensorFlow 1.x and adapted from the official DeepLab implementation.
 
----
-
 ## 📌 Dataset Disclaimer
 
 The dataset used for training and evaluation is **proprietary to the CSIP Research Lab UOW** and cannot be publicly shared. Only sample directory structure and processing instructions are provided.
-
----
 
 ## 📈 Performance
 
 - Achieved **95.99% mean Intersection over Union (mIoU)** on the test set  
 - Efficient inference using MobileNetV2 and optimized input pipeline  
-
----
 
 ## 📁 Directory Structure
 
@@ -25,8 +19,6 @@ lane_segmentation_deeplabv3/
 ├── slim/        # TensorFlow slim dependencies
 └── README.md    # This file
 ```
-
----
 
 ## 📚 Table of Contents
 
@@ -39,8 +31,6 @@ lane_segmentation_deeplabv3/
 - [Inference](#inference)  
 - [References](#references)
 
----
-
 ## 🛠️ Prerequisites
 
 Install required Python packages:
@@ -49,8 +39,6 @@ Install required Python packages:
 pip install numpy Pillow tf_slim matplotlib
 ```
 
----
-
 ## ⚙️ Setup
 
 Set `PYTHONPATH` for DeepLab:
@@ -58,8 +46,6 @@ Set `PYTHONPATH` for DeepLab:
 ```bash
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
-
----
 
 ## 🗂️ Dataset Preparation
 
@@ -79,8 +65,6 @@ dataset/
         ├── val.txt
         └── trainval.txt
 ```
-
----
 
 ## 🧼 Data Preprocessing
 
@@ -105,8 +89,6 @@ python deeplab/datasets/build_voc2012_data.py \
 
 Update `data_generator.py` to reflect your dataset's number of classes and total samples.
 
----
-
 ## 🏋️ Training
 
 Download a pre-trained model checkpoint from the [DeepLab Model Zoo](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md).
@@ -129,8 +111,6 @@ python deeplab/train.py \
   --dataset_dir="dataset/tfrecord"
 ```
 
----
-
 ## 📊 Evaluation
 
 ```bash
@@ -146,8 +126,6 @@ python deeplab/eval.py \
   --eval_logdir="eval_log" \
   --dataset_dir="dataset/tfrecord"
 ```
-
----
 
 ## 🖼️ Inference
 
@@ -167,7 +145,10 @@ python deeplab/vis.py \
   --dataset_dir="dataset/tfrecord"
 ```
 
----
+## 📚 References
+
+- [DeepLab v3+ Custom Training Guide](https://rockyshikoku.medium.com/train-deeplab-v3-with-your-own-dataset-13f2af958a75)  
+- [TensorFlow Models Repository](https://github.com/tensorflow/models)
 
 ## Notes
 
@@ -178,8 +159,3 @@ lane_segmentation_deeplabv3/deeplab/datasets/custom/exp/train_on_trainval_set/
 ```
 
 - For privacy reasons, only a few example outputs are retained in this repository.
-
-## 📚 References
-
-- [DeepLab v3+ Custom Training Guide](https://rockyshikoku.medium.com/train-deeplab-v3-with-your-own-dataset-13f2af958a75)  
-- [TensorFlow Models Repository](https://github.com/tensorflow/models)
