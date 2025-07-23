@@ -4,6 +4,10 @@
 
 This repository provides complete implementation of the **lane segmentation** and **pothole detection** modules.
 
+## 🎥 Demo Preview
+
+![Demo Output](./docs/output.gif)
+
 ## 🎯 Objectives
 
 - Enable safe and efficient navigation in real-time  
