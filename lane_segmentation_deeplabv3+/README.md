@@ -145,11 +145,6 @@ python deeplab/vis.py \
   --dataset_dir="dataset/tfrecord"
 ```
 
-## 📚 References
-
-- [DeepLab v3+ Custom Training Guide](https://rockyshikoku.medium.com/train-deeplab-v3-with-your-own-dataset-13f2af958a75)  
-- [TensorFlow Models Repository](https://github.com/tensorflow/models)
-
 ## Notes
 
 - The training logs and visualization outputs are located under:
@@ -159,3 +154,8 @@ lane_segmentation_deeplabv3/deeplab/datasets/custom/exp/train_on_trainval_set/
 ```
 
 - For privacy reasons, only a few example outputs are retained in this repository.
+  
+## 📚 References
+
+- [DeepLab v3+ Custom Training Guide](https://rockyshikoku.medium.com/train-deeplab-v3-with-your-own-dataset-13f2af958a75)  
+- [TensorFlow Models Repository](https://github.com/tensorflow/models)
