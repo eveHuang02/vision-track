@@ -1,6 +1,6 @@
-# Vision_Track
+# Vision Track
 
-**Vision_Track** is an AI-based navigation system designed to assist visually impaired individuals by detecting obstacles, segmenting lanes, and estimating depth. The system integrates DeepLabV3+ for lane segmentation, a pretrained YOLOv12-nano model for general object detection, and a YOLOv12-nano model trained on a custom dataset for pothole detection. Depth estimation is achieved using DepthAnythingV2 and LiDAR. Feedback is provided through voice and haptic responses.
+**Vision Track** is an AI-based navigation system designed to assist visually impaired individuals by detecting obstacles, segmenting lanes, and estimating depth. The system integrates DeepLabV3+ for lane segmentation, a pretrained YOLOv12-nano model for general object detection, and a YOLOv12-nano model trained on a custom dataset for pothole detection. Depth estimation is achieved using DepthAnythingV2 and LiDAR. Feedback is provided through voice and haptic responses.
 
 This repository provides complete implementation of the **lane segmentation** and **pothole detection** modules.
 
